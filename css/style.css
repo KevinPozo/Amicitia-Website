@@ -612,7 +612,7 @@ header {
 /*Footer*/
 footer {
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: var(--second-color); /* Lavender Violet para contraste elegante */
 }
 .footer-container {
   max-width: 1200px;
@@ -636,7 +636,7 @@ footer {
   object-fit: contain;
 }
 .footer-company-box p {
-  color: #585858;
+  color: #fcebf8; /* Texto claro (Lavender Rose suave) para destacar sobre el violeta */
   margin: 5px 0px;
   font-size: 0.9rem;
   letter-spacing: 0.3px;
@@ -656,8 +656,8 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 1px solid #e9e9e9;
-  color: #333333;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   font-size: 0.9rem;
   transition: all ease 0.3s;
 }
@@ -667,14 +667,14 @@ footer {
 }
 .footer-link-box strong {
   font-size: 1.2rem;
-  color: #1d1d1d;
+  color: #ffffff;
   font-weight: 500;
 }
 .footer-link-box ul {
   margin-top: 5px;
 }
 .footer-link-box ul li a {
-  color: #585858;
+  color: #e4d7ee; /* Violeta muy clarito */
   font-size: 0.9rem;
   margin-bottom: 5px;
   display: flex;
@@ -688,14 +688,14 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border-top: 1px solid #e9e9e9;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px 0px;
   max-width: 1200px;
   width: 90%;
   margin: auto;
 }
 .footer-bottom span {
-  color: #252525;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 /* Floating Social Media */
