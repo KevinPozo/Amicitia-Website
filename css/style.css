@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: #fcf4f9; /* Lavender Rose muy suave para que cubra todo el fondo sin deslumbrar */
+}
 a {
   text-decoration: none;
 }
@@ -23,13 +26,14 @@ ul {
 
   /* Colores Principales Ajustados */
   --main-color: var(--deep-cerise); /* Fucsia vibrante como color principal llamativo */
-  --main-light-color: #fcebf8; /* Fondo suave para no competir con los colores fuertes */
+  --main-light-color: #fdf5fa; /* Fondo extra suave basado en Lavender Rose */
   --second-color: var(--lavender-violet); /* Violeta elegante para detalles y contrastes */
+  --catalog-color: var(--ruddy-blue); /* Celeste para aspecto de catálogo */
 }
 header {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: transparent;
   width: 100%;
   top: 0px;
   left: 0px;
@@ -59,7 +63,7 @@ header {
   margin: auto;
 }
 .logo {
-  height: 60px;
+  height: 85px; /* Logo más grande como se solicitó */
 }
 .logo img {
   height: 100%;
@@ -118,6 +122,7 @@ header {
 }
 .header-fix {
   position: fixed;
+  background-color: #fcf4f9; /* Mantiene el fondo lavender rose al hacer scroll */
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.05);
   animation: animationnav 0.6s;
 }
@@ -341,14 +346,14 @@ header {
   padding: 5px 20px;
 }
 .new-product-text .new-product-title {
-  color: #1d1d1d;
-  font-weight: 400;
-  font-size: 0.9rem;
+  color: var(--catalog-color); /* Celeste Ruddy Blue para el catálogo */
+  font-weight: 500;
+  font-size: 1rem;
 }
 .new-product-text span {
-  color: var(--main-color);
-  font-size: 0.9rem;
-  font-weight: 400;
+  color: var(--second-color);
+  font-size: 1rem;
+  font-weight: 600;
 }
 .new-product-img span {
   position: absolute;
@@ -692,6 +697,33 @@ footer {
 .footer-bottom span {
   color: #252525;
   font-size: 0.9rem;
+}
+/* Floating Social Media */
+.floating-social {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+.floating-social a {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, var(--deep-cerise), var(--lavender-violet));
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.floating-social a:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 2px 6px 20px rgba(119, 88, 163, 0.4);
 }
 /*Diseño responsivo*/
 .menu-btn,
