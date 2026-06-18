@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Joyas - Demo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body id="top">
+    <!-- Header -->
+    <header id="header">
+      <!-- Top Bar -->
+      <div class="header-top-bar">
+        <span>Bienvenidos a Amicita Tienda Online</span>
+      </div>
+      <!-- Navigation -->
+      <nav class="navigation">
+        <a href="#" class="logo"
+          ><img src="images/logo.webp" alt="logo Amicita"
+        /></a>
+        <!--Menu boton-->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon"
+          ><span class="nav-icon"></span
+        ></label>
+        <!--menu-->
+        <ul class="menu">
+          <li><a href="#top" class="active">Inicio</a></li>
+          <li><a href="#category">Categoría</a></li>
+          <li><a href="#new_product">Productos</a></li>
+          <li><a href="#clients">Comentarios</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+        <!--right-nav-->
+        <div class="right-nav">
+          <a href="#" class="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="#" class="nav-user">
+            <i class="fa-regular fa-user"></i>
+          </a>
+          <a href="#" class="nav-cart">
+            <i class="fa-solid fa-cart-shopping">
+              <span>0</span>
+            </i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Banner -->
+    <section id="main-banner">
+      <div class="main-banner-box">
+        <!--imagenes-->
+        <img src="images/banner_1.webp" alt="Banner Amicita" />
+        <div class="main-banner-text">
+          <h1>Collección de Joyas</h1>
+          <p>Diseño de Joyas, Brazaletes, Collares, Aretes</p>
+          <a href="#">Compra Ahora</a>
+        </div>
+      </div>
+    </section>
+    <!--service info-->
+    <section class="what-we-provide">
+      <div class="w-info-box">
+        <div class="w-info-icon">
+          <i class="fa-solid fa-plane"></i>
+        </div>
+        <div class="w-info-text">
+          <strong>Envío Gratis</strong>
+          <p>Lorem, ipsum dolor</p>
+        </div>
+      </div>
+
+      <div class="w-info-box">
+        <div class="w-info-icon">
+          <i class="fa-regular fa-comments"></i>
+        </div>
+        <div class="w-info-text">
+          <strong>Soporte 24/7</strong>
+          <p>Lorem, ipsum dolor</p>
+        </div>
+      </div>
+
+      <div class="w-info-box">
+        <div class="w-info-icon">
+          <i class="fa-solid fa-credit-card"></i>
+        </div>
+        <div class="w-info-text">
+          <strong>100% Pago Seguro</strong>
+          <p>Lorem, ipsum dolor</p>
+        </div>
+      </div>
+    </section>
+    <!--producto-grid-->
+    <section class="product-grid-half">
+      <div class="product-grid-box product-grid-box1">
+        <img src="images/box2.webp" alt="producto" />
+        <div class="product-grid-text">
+          <span>Hermoso</span>
+          <strong>Anillo de Bodas</strong>
+          <a href="#">Comprar Ahora</a>
+        </div>
+      </div>
+
+      <div class="product-grid-box product-grid-box2">
+        <img src="images/box1.webp" alt="producto" />
+        <div class="product-grid-text">
+          <span>Hermoso</span>
+          <strong>Anillo de Bodas</strong>
+          <a href="#">Comprar Ahora</a>
+        </div>
+      </div>
+
+      <div class="product-grid-box product-grid-box3">
+        <img src="images/box3.webp" alt="producto" />
+        <div class="product-grid-text">
+          <span>Hermoso</span>
+          <strong>Anillo de Bodas</strong>
+          <a href="#">Comprar Ahora</a>
+        </div>
+      </div>
+    </section>
+    <!--new product-->
+    <section id="new_product">
+      <div class="new-product-heading">
+        <h2>Nuestros Productos</h2>
+        <p>Añade nuestros productos a tu programación semanal.</p>
+      </div>
+
+      <div class="new-product-container">
+        <!--SWIPER-->
+        <div class="swiper mySwiperNewProduct">
+          <div class="swiper-wrapper">
+            <!--slide 1-->
+            <div class="swiper-slide">
+              <div class="new-product-box">
+                <a href="#" class="new-product-img">
+                  <img src="images/product-1.webp" alt="product" />
+                  <span>Nuevo</span>
+                  <button class="new-product-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                  </button>
+                </a>
+                <div class="new-product-text">
+                  <a href="#" class="new-product-title"> Anillo para Mujer </a>
+                  <span>$100</span>
+                </div>
+              </div>
+            </div>
+            <!--slide 2-->
+            <div class="swiper-slide">
+              <div class="new-product-box">
+                <a href="#" class="new-product-img">
+                  <img src="images/product-2.webp" alt="product" />
+                  <span>Nuevo</span>
+                  <button class="new-product-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                  </button>
+                </a>
+                <div class="new-product-text">
+                  <a href="#" class="new-product-title"> Anillo para Mujer </a>
+                  <span>$100</span>
+                </div>
+              </div>
+            </div>
+            <!--slide 3-->
+            <div class="swiper-slide">
+              <div class="new-product-box">
+                <a href="#" class="new-product-img">
+                  <img src="images/product-3.webp" alt="product" />
+                  <span>Nuevo</span>
+                  <button class="new-product-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                  </button>
+                </a>
+                <div class="new-product-text">
+                  <a href="#" class="new-product-title"> Anillo para Mujer </a>
+                  <span>$100</span>
+                </div>
+              </div>
+            </div>
+            <!--slide 4-->
+            <div class="swiper-slide">
+              <div class="new-product-box">
+                <a href="#" class="new-product-img">
+                  <img src="images/product-4.webp" alt="product" />
+                  <span>Nuevo</span>
+                  <button class="new-product-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                  </button>
+                </a>
+                <div class="new-product-text">
+                  <a href="#" class="new-product-title"> Anillo para Mujer </a>
+                  <span>$100</span>
+                </div>
+              </div>
+            </div>
+            <!--slide 5-->
+            <div class="swiper-slide">
+              <div class="new-product-box">
+                <a href="#" class="new-product-img">
+                  <img src="images/product-5.webp" alt="product" />
+                  <span>Nuevo</span>
+                  <button class="new-product-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                  </button>
+                </a>
+                <div class="new-product-text">
+                  <a href="#" class="new-product-title"> Anillo para Mujer </a>
+                  <span>$100</span>
+                </div>
+              </div>
+            </div>
+            <!--slide 6-->
+            <div class="swiper-slide">
+              <div class="new-product-box">
+                <a href="#" class="new-product-img">
+                  <img src="images/product-6.webp" alt="product" />
+                  <span>Nuevo</span>
+                  <button class="new-product-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                  </button>
+                </a>
+                <div class="new-product-text">
+                  <a href="#" class="new-product-title"> Anillo para Mujer </a>
+                  <span>$100</span>
+                </div>
+              </div>
+            </div>
+            <!--slide 7-->
+            <div class="swiper-slide">
+              <div class="new-product-box">
+                <a href="#" class="new-product-img">
+                  <img src="images/product-7.webp" alt="product" />
+                  <span>Nuevo</span>
+                  <button class="new-product-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+                  </button>
+                </a>
+                <div class="new-product-text">
+                  <a href="#" class="new-product-title"> Anillo para Mujer </a>
+                  <span>$100</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!--Category-->
+    <section id="category">
+      <div class="category-container">
+        <a href="#" class="category-box"
+          ><img src="images/img1-middle.webp" alt="category" />
+          <strong>Anillos</strong>
+        </a>
+        <a href="#" class="category-box"
+          ><img src="images/img2-middle.webp" alt="category" />
+          <strong>Aretes</strong>
+        </a>
+        <a href="#" class="category-box"
+          ><img src="images/img3-middle.webp" alt="category" />
+          <strong>Collares</strong>
+        </a>
+        <a href="#" class="category-box"
+          ><img src="images/img4-middle.webp" alt="category" />
+          <strong>Brazalete</strong>
+        </a>
+      </div>
+    </section>
+
+    <!--Feature Product-->
+    <section id="feature_product">
+      <div class="new-product-heading">
+        <h2>Productos Destacados</h2>
+        <p>Añade nuestros productos a tu programación semanal.</p>
+      </div>
+      <div class="feature-product-container">
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-8.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-9.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-10.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-11.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-12.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-13.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-14.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-15.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+
+        <div class="new-product-box">
+          <a href="#" class="new-product-img">
+            <img src="images/product-16.webp" alt="product" />
+            <span>Nuevo</span>
+            <button class="new-product-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Añadir al Carrito
+            </button>
+          </a>
+          <div class="new-product-text">
+            <a href="#" class="new-product-title"> Anillo para Mujer </a>
+            <span>$100</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonial-->
+    <section id="clients">
+      <div class="client-heading">
+        <h3>Comentarios</h3>
+        <p>¿Qué dicen nuestros clientes de nosotras?</p>
+      </div>
+
+      <div class="client-box-container">
+        <div class="swiper mySwiperTestimonials">
+          <div class="swiper-wrapper">
+            <!--slide 1-->
+            <div class="swiper-slide">
+              <div class="client-box">
+                <div class="client-profile">
+                  <img src="images/t1.jpg" alt="client" />
+                  <div class="profile-text">
+                    <strong>Alicia Garcia</strong>
+                    <span>Cliente</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor, excepturi!
+                </p>
+              </div>
+            </div>
+            <!--slide 2-->
+            <div class="swiper-slide">
+              <div class="client-box">
+                <div class="client-profile">
+                  <img src="images/t1.jpg" alt="client" />
+                  <div class="profile-text">
+                    <strong>Alicia Garcia</strong>
+                    <span>Cliente</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor, excepturi!
+                </p>
+              </div>
+            </div>
+            <!--slide 3-->
+            <div class="swiper-slide">
+              <div class="client-box">
+                <div class="client-profile">
+                  <img src="images/t1.jpg" alt="client" />
+                  <div class="profile-text">
+                    <strong>Alicia Garcia</strong>
+                    <span>Cliente</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor, excepturi!
+                </p>
+              </div>
+            </div>
+            <!--slide 4-->
+            <div class="swiper-slide">
+              <div class="client-box">
+                <div class="client-profile">
+                  <img src="images/t1.jpg" alt="client" />
+                  <div class="profile-text">
+                    <strong>Alicia Garcia</strong>
+                    <span>Cliente</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolor, excepturi!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!--Blog-->
+    <section id="blog">
+      <div class="blog-headging">
+        <h3>Ultimos Blogs</h3>
+        <span>Nuestras Ultimas Publicaciones</span>
+      </div>
+      <div class="blog-container">
+        <!--blog box 1-->
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="images/blog-img1.webp" alt="blog" />
+          </div>
+          <div class="blog-text">
+            <span>17 de Junio 2026 / Joyas</span>
+            <a href="#" class="blog-title">La Mejor Colección de Joyas</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              eaque.
+            </p>
+            <a href="#">Leer Más</a>
+          </div>
+        </div>
+        <!--blog box 2-->
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="images/blog-img2.webp" alt="blog" />
+          </div>
+          <div class="blog-text">
+            <span>17 de Junio 2026 / Joyas</span>
+            <a href="#" class="blog-title">La Mejor Colección de Joyas</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              eaque.
+            </p>
+            <a href="#">Leer Más</a>
+          </div>
+        </div>
+        <!--blog box 3-->
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="images/blog-img3.webp" alt="blog" />
+          </div>
+          <div class="blog-text">
+            <span>17 de Junio 2026 / Joyas</span>
+            <a href="#" class="blog-title">La Mejor Colección de Joyas</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              eaque.
+            </p>
+            <a href="#">Leer Más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-company-box">
+          <a href="#" class="logo">
+            <img src="images/logo.webp" alt="Logo Amicita" />
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            iste?
+          </p>
+          <div class="footer-social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Links Principales</strong>
+          <ul>
+            <li><a href="#top">Inicio</a></li>
+            <li><a href="#category">Categorías</a></li>
+            <li><a href="#new_product">Productos</a></li>
+            <li><a href="#feature_product">Destacados</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Links Externos</strong>
+          <ul>
+            <li><a href="#top">Inicio</a></li>
+            <li><a href="#category">Categorías</a></li>
+            <li><a href="#new_product">Productos</a></li>
+            <li><a href="#feature_product">Destacados</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Links Externos</strong>
+          <ul>
+            <li><a href="#top">Inicio</a></li>
+            <li><a href="#category">Categorías</a></li>
+            <li><a href="#new_product">Productos</a></li>
+            <li><a href="#feature_product">Destacados</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Botoom-->
+      <div class="footer-bottom">
+        <span class="footer-owner"> Elaborado por Amicita </span>
+        <span class="copyright">&#169; Copyright 2026 - Amicita</span>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper & Custom Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
