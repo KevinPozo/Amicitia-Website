@@ -249,7 +249,7 @@ header {
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
-  background-color: var(--main-light-color);
+  background-color: var(--honey-gold); /* Honey Gold solicitado por el usuario */
   position: relative;
 }
 .product-grid-text {
