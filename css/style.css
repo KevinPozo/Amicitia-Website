@@ -331,6 +331,7 @@ header {
   margin: auto;
   overflow: hidden;
   position: relative;
+  background-color: var(--honey-gold); /* Fondo dorado para PNGs sin fondo */
 }
 .new-product-img img {
   width: 100%;
@@ -424,6 +425,7 @@ header {
   height: 400px;
   position: relative;
   transition: all ease 0.3s;
+  background-color: var(--honey-gold); /* Fondo dorado para PNGs sin fondo */
 }
 .category-box:hover {
   opacity: 0.8;
