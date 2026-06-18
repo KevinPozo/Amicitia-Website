@@ -409,8 +409,8 @@ header {
   margin-bottom: 80px;
 }
 .category-container {
-  display: flex;
-  grid-template-column: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 .category-box {
@@ -778,15 +778,15 @@ footer {
   .navigation .menu-icon .nav-icon::after {
     top: -7px;
   }
-  .navigation .menu-btn:checked ~ .menu-icon .nav.icon::before {
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
     transform: rotate(-45deg);
     top: 0px;
   }
-  .navigation .menu-btn:checked ~ .menu-icon .nav.icon::after {
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
     transform: rotate(45deg);
     top: 0px;
   }
-  .navigation .menu-btn:checked ~ .menu-icon .nav.icon {
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon {
     background-color: transparent;
   }
   .navigation .menu-btn:checked ~ .menu {
@@ -857,6 +857,14 @@ footer {
     .feature-product-container,
     .category-container{
         grid-template-columns: 1fr;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
     }
     .blog-box{
         margin: 20px auto;
