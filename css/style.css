@@ -151,6 +151,7 @@ header {
   width: 100%;
   height: 100%;
   position: relative;
+  background-color: var(--honey-gold); /* Fondo dorado para cuando las imágenes no tienen fondo */
 }
 .main-banner-box img {
   width: 100%;
