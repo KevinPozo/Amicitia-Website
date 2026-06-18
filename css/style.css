@@ -47,8 +47,8 @@ header {
   align-items: center;
 }
 .header-top-bar span {
-  color: #474747;
-  font-size: 0.8rem;
+  color: var(--deep-cerise); /* Solicitado: rosa más fuerte (Deep Cerise) */
+  font-size: 1.2rem; /* Más grande */
   letter-spacing: 0.3px;
   font-weight: 500;
 }
@@ -63,7 +63,7 @@ header {
   margin: auto;
 }
 .logo {
-  height: 85px; /* Logo más grande como se solicitó */
+  height: 110px; /* Logo aún más grande */
 }
 .logo img {
   height: 100%;
@@ -612,7 +612,7 @@ header {
 /*Footer*/
 footer {
   width: 100%;
-  background-color: var(--lavender-rose); /* Lavender Rose vibrante para que el logo resalte bien */
+  background-color: #B5E2FF; /* Baby blue para contrastar con el lavender */
 }
 .footer-container {
   max-width: 1200px;
